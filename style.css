@@ -39,9 +39,12 @@ body{
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: 2rem 0;
+    padding: 3rem 0;
     background-image: linear-gradient(45deg, #f772b2, aqua);
 
+}
+textarea {
+    overflow-y: scroll;
 }
 
 .input-section{
@@ -51,6 +54,8 @@ body{
     flex-direction: column;
     margin: 10px auto;
     flex: 1;
+    max-width: 1fr;
+
 }
 
 .input-title{
@@ -59,7 +64,7 @@ body{
 
 #usertext{
     margin-top: 10px;
-    width: 500px;
+    max-width: 1fr;
     height: 150px;
     resize: none;
     font-size: 18px;
@@ -90,6 +95,7 @@ body{
     flex-direction: column;
     margin: 10px auto;
     flex: 1;
+    max-width: 1fr;
 }
 
 .output-title{
