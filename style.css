@@ -1,114 +1,66 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&display=swap');
+
+* {
     box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+}
 
+:root {
+    --primary: #7e00f35b;
+    --black: #333333;
+    --width-break:600px
 
-*{
-    
+}
+
+body {
     margin: 0;
-    padding: 0;
-}
-
-body{
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-
-}
-
-
-.navbar{
-    margin-bottom: auto;
-    background-color: #8B5CF6;
-    width: 100%;
-    height: 80px;
-}
-
-.navbar-text{
-    font-size: 2rem;
-    margin: 0 auto;
-    padding: 1rem 0;
-}
-
-.main{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 3rem 0;
+    font-family: 'Baloo Bhai 2';
+    color: #333333;
     background-image: linear-gradient(45deg, #f772b2, aqua);
 
 }
+
+nav {
+    background-color: var(--primary);
+    text-align: center;
+}
+
+main {
+    margin: auto;
+    padding: 1rem;
+    max-width: var(--width-break);
+    height: 73vh;
+
+}
+
 textarea {
-    overflow-y: scroll;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit;
 }
 
-.input-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px auto;
-    flex: 1;
-    max-width: 1fr;
-
+button {
+    background-color: #7e00f35b;
+    border: none;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    font-family: 'Kalam', cursive;
+    font-size: large;
 }
 
-.input-title{
-    font-size: 26px;
-}
 
-#usertext{
-    margin-top: 10px;
-    max-width: 1fr;
-    height: 150px;
-    resize: none;
-    font-size: 18px;
-    padding: 10px;
-}
-
-.btn-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0.5rem 0;
-}
-
-#btn-translate {
-    border-radius: 28px;
-    color: #000000;
-    font-size: 20px;
-    background: #7e00f35b;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-    border: 2px solid #000000;
-}
-
-.output-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px auto;
-    flex: 1;
-    max-width: 1fr;
-}
-
-.output-title{
-    font-size: 26px;
-}
-
-#translation{
-    margin-bottom: 10px;
-    width: 500px;
-    height: 150px;
-    resize: none;
-    font-size: 18px;
-    padding: 10px;
+#translate-output {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    overflow:scroll;
+    border: 1px solid var(--black);
+    background-color: #fff;
+    color: #333333;
 }
 
 /* Footer */

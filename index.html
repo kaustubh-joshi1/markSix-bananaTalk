@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/0ae1aebe6f.js" crossorigin="anonymous"></script>
-    <title>Banana talk!</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <h1 class="navbar-text">Banana talk!</h1>
-    </div>
-    <div class="main">
-        <div class="input-section">
-          <textarea name="" id="usertext" cols="60" rows="10" placeholder="Enter text to be translated to banana language here!"></textarea>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>banana talk</title>
+    <link href="style.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <nav>
+        <div style="font-size: 2rem; padding: 1rem;">
+            banana talk
         </div>
-        <div class="btn-div">
-          <button id="btn-translate">Translate to banana!</button>
-        </div>
-        <div class="output-section">
-          <textarea name="" id="translation" cols="60" rows="10" placeholder="Translation will appear here!"></textarea>
-        </div>
-    </div>
+
+    </nav>
+    <main>
+        <textarea id="translate-input"
+            placeholder="Put your message here which you want to convert to banana language"></textarea>
+        <button id="translate-button"> Translate To Banana</button>
+        <div>Translation will come here 👇</div>
+
+        <div id="translate-output" style="padding: 1rem; font-size: large;"></div>
+
+
+    </main>
 
 
     <footer>
-      <div class="icons">
-          <a href=" https://twitter.com/erkaustubhjoshi" target="_blank" > </i><i class="fab fa-twitter"></i></a>
-          <a href="https://www.linkedin.com/in/kaustubh-joshi-88173b224/" target="_blank" ><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/kaustubh-joshi1" target="_blank" ><i class="fab fa-github"></i></a>
-      </div>
-      <p>© | 2021 | Kaustubh Joshi </p>
+        <div class="icons">
+            <a href=" https://twitter.com/erkaustubhjoshi" target="_blank" > </i><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/kaustubh-joshi-88173b224/" target="_blank" ><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/kaustubh-joshi1" target="_blank" ><i class="fab fa-github"></i></a>
+        </div>
+        <p>© | 2021 | Kaustubh Joshi </p>
+  
+    </footer>
+  
+  <script src="https://kit.fontawesome.com/0dbbe70cac.js" crossorigin="anonymous"></script>
 
-  </footer>
+    <script src="script.js" type="text/javascript"> </script>
+</body>
 
-<script src="https://kit.fontawesome.com/0dbbe70cac.js" crossorigin="anonymous"></script>
-
-    <script src="script.js"></script>
-  </body>
 </html>
